@@ -56,6 +56,19 @@ rename the file after downloading, and apply the executable bit (`chmod +x`) on 
 To upgrade proto, run the [`proto upgrade`](./commands/upgrade) command, or re-run the install
 scripts above.
 
+## Downgrading
+
+To install a previous version of proto
+
+### Linux, macOS, WSL
+
+In a terminal that supports Bash, run:
+
+Example using [v0.19.3](https://github.com/moonrepo/proto/releases/tag/v0.19.3)
+```shell
+curl -fsSL https://moonrepo.dev/install/proto.sh | bash -s -- 0.19.3
+```
+
 ## Uninstalling
 
 To uninstall proto, delete the `~/.proto` directory, and remove any `PROTO_HOME` references from
